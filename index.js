@@ -11,4 +11,4 @@ app.use(logger);
 app.use(router);
 app.use(errorHandler);
 
-app.listen(port, () => console.log(`Snippets listening on port ${port}!`));
+app.listen(process.env.PORT || port, () => console.log(`Snippets listening on port ${port}!`));
