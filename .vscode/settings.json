@@ -1,0 +1,13 @@
+{
+  "sqltools.connections": [
+    {
+      "database": "snips",
+      "dialect": "PostgreSQL",
+      "name": "Snips DB",
+      "password": "password",
+      "port": 5432,
+      "server": "localhost",
+      "username": "cbrand"
+    }
+  ]
+}

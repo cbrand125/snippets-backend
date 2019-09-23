@@ -3,7 +3,6 @@ function logger2(request, response, next) {
 }
 
 function logger(request, reponse, next) {
-  console.log('A request was made');
   next();
 }
 module.exports = logger;
