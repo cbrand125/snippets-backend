@@ -27,6 +27,7 @@
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^1.19.1",
     "pg": "^7.12.1",
-    "shortid": "^2.2.14"
+    "shortid": "^2.2.14",
+    "supertest": "^4.0.2"
   }
 }

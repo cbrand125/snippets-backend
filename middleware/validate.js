@@ -5,7 +5,7 @@ module.exports = (request, response, next) => {
   if (!auth) return response.end(401);
   const token = auth.split(' ')[1];
   try {
-    jwt.verify(token, process.env.JWT_SECRET);
+    request.body.author = jwt.verify(token, process.env.JWT_SECRET);
     next();
   } catch (err) {
     response.sendStatus(401);

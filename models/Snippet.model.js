@@ -52,6 +52,7 @@ exports.insert = async ({ author, code, title, description, language }) => {
     );
     return result.rows[0];
   } catch (err) {
+    console.log(err);
     throw new ErrorWithHttpStatus('Database error', 500);
   }
 };
